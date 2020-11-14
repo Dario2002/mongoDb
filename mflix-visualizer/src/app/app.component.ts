@@ -17,10 +17,22 @@ export class AppComponent {
 
   load10Movies()
   {
-    this.obs = this.http.get("https://3000-e590d4d4-e238-42d0-bcb2-b992c9d68c5f.ws-eu01.gitpod.io/movies/list/10");
+    this.obs = this.http.get("https://3000-d95b1dcf-8a1c-4e89-97b0-7b4024bb28bb.ws-eu01.gitpod.io/movies/list/10");
     this.obs.subscribe(this.getData);
   }
 
+  movies10Comedy()
+  {
+    this.obs = this.http.get("https://3000-d95b1dcf-8a1c-4e89-97b0-7b4024bb28bb.ws-eu01.gitpod.io/movies/movie_from_genres/comedy");
+    this.obs.subscribe(this.getData);
+  }
+  
+  movies10Horror()
+  {
+    this.obs = this.http.get("https://3000-d95b1dcf-8a1c-4e89-97b0-7b4024bb28bb.ws-eu01.gitpod.io/movies/movie_from_genres/horror");
+    this.obs.subscribe(this.getData);
+  }
+  
   getData = (data) => {
     this.results = data;
   }
