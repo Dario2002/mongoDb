@@ -17,19 +17,19 @@ export class AppComponent {
 
   load10Movies()
   {
-    this.obs = this.http.get("https://3000-d95b1dcf-8a1c-4e89-97b0-7b4024bb28bb.ws-eu01.gitpod.io/movies/list/10");
+    this.obs = this.http.get("https://3000-f2c103a8-a821-479d-a045-895e1d7f97ce.ws-eu01.gitpod.io/movies/list/10");
     this.obs.subscribe(this.getData);
   }
 
   movies10Comedy()
   {
-    this.obs = this.http.get("https://3000-d95b1dcf-8a1c-4e89-97b0-7b4024bb28bb.ws-eu01.gitpod.io/movies/movie_from_genres/comedy");
+    this.obs = this.http.get("https://3000-f2c103a8-a821-479d-a045-895e1d7f97ce.ws-eu01.gitpod.io/movies/movie_from_genres/Comedy");
     this.obs.subscribe(this.getData);
   }
   
   movies10Horror()
   {
-    this.obs = this.http.get("https://3000-d95b1dcf-8a1c-4e89-97b0-7b4024bb28bb.ws-eu01.gitpod.io/movies/movie_from_genres/horror");
+    this.obs = this.http.get("https://3000-f2c103a8-a821-479d-a045-895e1d7f97ce.ws-eu01.gitpod.io/movies/movie_from_genres/Horror");
     this.obs.subscribe(this.getData);
   }
   
